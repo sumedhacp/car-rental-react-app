@@ -11,11 +11,12 @@ const AddCar = () => {
             brand: "",
             model: "",
             vehicle_type: "",
+            fuel_type:"",
             transmission: "",
             seating_capacity: "",
-            arrival_time: "",
-            fare: "",
-            total_seats: ""
+            rent_per_day:"",
+            city:"",
+            availability_status=""
         }
     )
 
@@ -60,14 +61,14 @@ const AddCar = () => {
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                                 <label htmlFor="" className="form-label">Brand</label>
-                                <input type="text" className="form-control" name="Brand" value={input.Brand} onChange={inputHandler}  />
+                                <input type="text" className="form-control" name="brand" value={input.brand} onChange={inputHandler}  />
 
 
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                                 <label htmlFor="" className="form-label">Model</label>
-                                <input type="text" className="form-control" name="Model" value={input.Model} onChange={inputHandler} />
+                                <input type="text" className="form-control" name="model" value={input.model} onChange={inputHandler} />
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
