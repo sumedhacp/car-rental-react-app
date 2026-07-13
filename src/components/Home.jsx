@@ -1,8 +1,10 @@
 import React from 'react'
+import NavigationBar from './NavigationBar'
 
 
 const Home = () => {
   return (
+    
     <div
       style={{
         backgroundColor: "#f4f6f9",
@@ -21,6 +23,7 @@ const Home = () => {
           borderBottomRightRadius: "40px"
         }}
       >
+        <NavigationBar />
         <div className="container">
 
           <div className="row align-items-center">
