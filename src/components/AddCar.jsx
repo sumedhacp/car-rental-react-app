@@ -15,7 +15,7 @@ const AddCar = () => {
             seating_capacity: "",
             rent_per_day:"",
             city:"",
-            availability_status=""
+            availability_status:""
         }
     )
 
