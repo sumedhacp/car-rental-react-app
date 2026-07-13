@@ -31,13 +31,13 @@ const AddCar = () => {
         axios.post("https://host-demo-app.onrender.com/api/add-car", input).then(
             (response) => {
                 console.log(response.data)
-                alert("Flight added successfully")
+                alert("Car added successfully")
             }
 
         ).catch(
                 (error)=>{
-                    console.error("Error Adding Flight",error)
-                    alert("Failed to add Flight")
+                    console.error("Error Adding Car",error)
+                    alert("Failed to add Car")
                 }
         )
     }
@@ -74,24 +74,24 @@ const AddCar = () => {
 
                                 <label htmlFor="" className="form-label">Vehicle Type</label>
                             
-                               <select name="" id="" className="form-control"  name="vehicle_type" value={input.vehicle_type} onChange={inputHandler}>
+                               <select className="form-control"  name="vehicle_type" value={input.vehicle_type} onChange={inputHandler}>
                                 <option value=""></option>
                                 <option value="Hatchback">Hatchback</option>
                                 <option value="Sedan">Sedan</option>
-                                <option value="SUV ">SUV </option>
-                                <option value="MUV">MUV </option>
+                                <option value="SUV">SUV</option>
+                                <option value="MUV">MUV</option>
                                </select>
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                                 <label htmlFor="" className="form-label">Fuel Type</label>
-                               
-                                <select name="" id="" className="form-control" name="fuel_type" value={input.fuel_type} onChange={inputHandler}>
+                              
+                                <select className="form-control" name="fuel_type" value={input.fuel_type} onChange={inputHandler}>
                                     <option value="">Select</option>
                                     <option value="Petrol">Petrol</option>
-                                    <option value="Diesel ">Diesel </option>
+                                    <option value="Diesel">Diesel</option>
                                     <option value="Electric">Electric</option>
-                                    <option value=" Hybrid "> Hybrid </option>
+                                    <option value=" Hybrid">Hybrid</option>
                                 </select>
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -126,7 +126,7 @@ const AddCar = () => {
 
                                 <label htmlFor="" className="form-label">Availability Status</label>
                                 
-                                 <select name="" id="" className="form-control" name="availability_status" value={input.availability_status} onChange={inputHandler}>
+                                 <select className="form-control" name="availability_status" value={input.availability_status} onChange={inputHandler}>
                                     <option value="">select</option>
                                     <option value="Available">Available</option>
                                     <option value="Booked"> Booked</option>
