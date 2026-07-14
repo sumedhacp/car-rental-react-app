@@ -34,10 +34,10 @@ const AddCar = () => {
             }
 
         ).catch(
-                (error)=>{
+                {/*(error)=>{
                     console.error("Error Adding Car",error)
                     alert("Failed to add Car")
-                }
+                }*/}
         )
     }
   return (
